@@ -22,7 +22,7 @@ function App() {
 
   const handleCopyPassword=useCallback(()=>{
     passwordRef.current?.select()
-    passwordRef.current?.setSelectionRange(0,3)
+    //passwordRef.current?.setSelectionRange(0,3)
     navigator.clipboard.writeText(password)
   },[password])
   //useRef hook
@@ -96,3 +96,4 @@ function App() {
 }
 
 export default App
+//useEffect called when page load first it runs and when array is updated whenever there is change in value useEffect will again invoke
