@@ -7,7 +7,7 @@ function App() {
   const [fromCurrency, setFromCurrency] = useState('USD');
   const [toCurrency, setToCurrency] = useState('EUR');
   
-  const currencyOptions = ['usd', 'eur', 'inr', 'gbp']; // Example currency options
+  const currencyOptions = ['usd', 'eur', 'inr', 'gbp']; 
 
   const handleFromAmountChange = (e) => {
     setFromAmount(e.target.value);
@@ -26,8 +26,7 @@ function App() {
   };
 
   const handleConvert = () => {
-    // Example conversion logic
-    const convertedAmount = (parseFloat(fromAmount) * 0.85).toFixed(2); // Example conversion rate
+    const convertedAmount = (parseFloat(fromAmount) * 0.85).toFixed(2); 
     setToAmount(convertedAmount);
   };
 
